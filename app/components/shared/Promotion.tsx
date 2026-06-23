@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 
-const API = "https://airflow-backend-a2bm.onrender.com";
+const API = "http://localhost:5000";
 
 type Promotion = {
   _id: string;
@@ -20,7 +20,7 @@ export default function Promotions() {
   useEffect(() => {
     const fetchPromotions = async () => {
       try {
-        const res = await fetch(`${API}/api/services/promotions`);
+        const res = await fetch(`${API}/api/promotions`);
         const data = await res.json();
         setPromotions(data);
       } catch (error) {
@@ -101,7 +101,7 @@ export default function Promotions() {
                     href="#contact"
                     className="inline-flex items-center justify-center bg-green-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-700 transition"
                   >
-                    Réclamer l’offre
+                    Claim Offer
                   </a>
                 </div>
               ))}

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
-import { CalendarDays, Clock } from "lucide-react";
+import { CalendarDays, Clock, CircleHelp, MessageCircleQuestion, BadgeHelp } from "lucide-react";
 
 function Hero() {
   return (
@@ -53,15 +53,19 @@ function Hero() {
 
               <div className="mt-10 flex gap-5 items-center">
                 <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-medium transition">
-                  <CalendarDays className="inline-block w-5 h-5 mr-2" />
-                  Schedule Service
+                  <BadgeHelp className="inline-block w-5 h-5 mr-2" />
+                  <a href="#fqas">
+                  FQAs
+                  </a>
                 </button>
 
                 <a
                   href="#"
                   className="text-green-600 font-medium hover:text-green-700"
                 >
+                  <a href="#contact">
                   Get a Free Quote
+                  </a>
                 </a>
               </div>
             </div>

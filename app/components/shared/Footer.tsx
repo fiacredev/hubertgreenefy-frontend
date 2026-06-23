@@ -15,7 +15,7 @@ export default function Footer() {
           <span className="text-green-600 font-semibold">
             Hubert Greenefy Inc.
           </span>{" "}
-          Tous droits réservés. <br className="sm:hidden" />
+          All rights reserved. <br className="sm:hidden" />
           <span className="text-gray-500">
             Breathe easy, we’ll take care of the rest.
           </span>
