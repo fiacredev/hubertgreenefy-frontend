@@ -9,7 +9,7 @@ import Promotion from "./components/shared/Promotion";
 import Contact from "./components/shared/Contact";
 import Footer from "./components/shared/Footer";
 import GoToPromo from "./components/shared/GoToPromo";
-import BackToTop from "./components/shared/ui/BackToTop";
+import BackToTop from "./components/shared/BackToTop";
 import type { Metadata } from "next";
 import Script from "next/script";
 
@@ -79,7 +79,6 @@ const structuredData = {
           </LazySection>
           
           <BackToTop />
-
           <Footer />
           {/* just come back at top */}
 
