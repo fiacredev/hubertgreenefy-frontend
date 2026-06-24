@@ -1,4 +1,4 @@
-"use server";
+"use client";
 
 import { useState } from "react";
 
@@ -7,13 +7,6 @@ const API = "https://hubertgreenefy-backend.onrender.com";
 interface LoginResponse {
   token: string;
 }
-
-export const metadata = {
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
 
 export default function LoginPage() {
 
