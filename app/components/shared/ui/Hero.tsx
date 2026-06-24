@@ -64,7 +64,7 @@ function Hero() {
                   className="text-green-600 font-medium hover:text-green-700"
                 >
                   <a href="#contact">
-                  Get a Free Quote
+                  Get a Free Quotee
                   </a>
                 </a>
               </div>
