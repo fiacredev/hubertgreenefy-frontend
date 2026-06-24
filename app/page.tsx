@@ -1,4 +1,4 @@
-import LazySection from "./components/shared/LazySection";
+import LazySection from "./components/shared/ui/LazySection";
 import Header from "./components/shared/Header";
 import Hero from "./components/shared/ui/Hero";
 import About from "./components/shared/About";
