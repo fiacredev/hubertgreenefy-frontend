@@ -10,6 +10,7 @@ import Footer from "./components/shared/Footer";
 import GoToPromo from "./components/shared/GoToPromo";
 import type { Metadata } from "next";
 import Script from "next/script";
+import "./globals.css";
 
 
 export const metadata: Metadata = {
