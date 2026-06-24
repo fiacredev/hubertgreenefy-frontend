@@ -1,75 +1,68 @@
+import Header from "./components/shared/Header";
+import Hero from "./components/shared/ui/Hero";
+import About from "./components/shared/About";
+import Services from "./components/shared/Services";
+import FQAs from "./components/shared/FAQs";
+import FacilitiesWeClean from "./components/shared/Places";
+import Promotion from "./components/shared/Promotion";
+import Contact from "./components/shared/Contact";
+import Footer from "./components/shared/Footer";
+import GoToPromo from "./components/shared/GoToPromo";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import Script from "next/script";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-// meta data just for search engine optimization to handle speed and performance of web application
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hubertgreenefy-frontend.vercel.app"),
-
-  title: {
-    default: "HubertGreenefy | Cleaning Services",
-    template: "%s | HubertGreenefy",
-  },
-
+  title: "Professional Cleaning & Snow Removal Services | HubertGreenefy",
   description:
-    "Professional residential and commercial cleaning services. Reliable, affordable, and high-quality cleaning solutions for homes, offices, and facilities.",
-
-  keywords: [
-    "cleaning services",
-    "commercial cleaning",
-    "residential cleaning",
-    "office cleaning",
-    "facility cleaning",
-    "deep cleaning",
-    "snow cleaning",
-  ],
-
-  authors: [{ name: "HubertGreenefy" }],
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  openGraph: {
-    title: "HubertGreenefy Cleaning Services",
-    description:
-      "Professional residential and commercial cleaning services.",
-    url: "https://hubertgreenefy-frontend.vercel.app",
-    siteName: "HubertGreenefy",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "HubertGreenefy Cleaning Services",
-    description:
-      "Professional residential and commercial cleaning services.",
-  },
+    "Professional cleaning services for homes, offices, and commercial facilities.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function Home() {
+  
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "HubertGreenefy",
+  url: "https://hubertgreenefy-frontend.vercel.app",
+  description:
+    "Professional residential and commercial cleaning services",
+  telephone: "+0000000000",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "RW",
+  },
+  areaServed: "Kigali",
+  sameAs: [],
+  // openingHours: "Mo-Sa 08:00-18:00",
+  // priceRange: "$$",
+};
+
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
+    <div className="min-h-screen bg-gray-50 text-foreground">
+
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+
+      <Header />
+      <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <Hero />
+          <GoToPromo />
+          <About />
+          <Services />
+          <FacilitiesWeClean />
+          <Promotion />
+          <FQAs />
+          <Contact />
+          <Footer />
+      </div>
+      {/* Final CTA Section of air flow*/}
+      {/* <Footer />
+      <BackToTop /> */}
+    </div>
   );
 }
