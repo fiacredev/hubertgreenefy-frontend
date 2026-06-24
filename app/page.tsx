@@ -12,7 +12,7 @@ import GoToPromo from "./components/shared/GoToPromo";
 import BackToTop from "./components/shared/BackToTop";
 import type { Metadata } from "next";
 import Script from "next/script";
-
+import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Professional Cleaning & Snow Removal Services | HubertGreenefy",
