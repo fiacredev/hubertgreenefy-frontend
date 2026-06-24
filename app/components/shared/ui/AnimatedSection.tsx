@@ -4,11 +4,6 @@
 import React, { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 
-// interface AnimatedSectionProps {
-//   children: ReactNode;
-//   className?: string;
-// }
-
 
 interface AnimatedSectionProps {
     children: React.ReactNode;

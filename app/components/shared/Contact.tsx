@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Phone, Mail, Clock } from "lucide-react";
 
-const API = "http://localhost:5000";
+const API = "https://hubertgreenefy-backend.onrender.com";
 
 export default function Contact() {
   const [formData, setFormData] = useState({

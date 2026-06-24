@@ -49,7 +49,7 @@ export default function ServicesSection() {
             >
                 <img
                 src={src}
-                alt="Service preview"
+                alt="Professional Cleaning & Snow Removal Services | HubertGreenefy"
                 className="w-full h-full object-cover hover:scale-105 transition duration-300"
                 />
             </div>
