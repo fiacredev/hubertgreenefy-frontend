@@ -53,7 +53,7 @@ const ExpandableList: React.FC<ExpandableListProps> = ({
           {/* Header */}
           <button
             onClick={() => toggleItem(item.id)}
-            className={`w-full bg-green-950 p-4 sm:p-5 md:p-6 flex justify-between items-center 
+            className={`w-full bg-gradient-to-br from-green-950 via-blue-950 to-blue-900 p-4 sm:p-5 md:p-6 flex justify-between items-center 
                         hover:bg-green-900 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-300`}
             aria-expanded={isExpanded(item.id)}
             aria-controls={`content-${item.id}`}
@@ -79,7 +79,7 @@ const ExpandableList: React.FC<ExpandableListProps> = ({
             }`}
             aria-hidden={!isExpanded(item.id)}
           >
-            <div className="bg-green-400 rounded-xl p-4 sm:p-5 md:p-6">
+            <div className="bg-gradient-to-r from-emerald-500 via-cyan-500 to-blue-600 rounded-xl p-4 sm:p-5 md:p-6">
               <p className="text-white/90 font-normal text-sm sm:text-base leading-5 sm:leading-6">
                 {item.answer || 'Content for this question will be available soon.'}
               </p>

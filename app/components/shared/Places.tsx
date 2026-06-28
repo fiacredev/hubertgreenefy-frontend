@@ -69,7 +69,7 @@ export default function FacilitiesWeClean() {
         key={item.label}
         className="flex items-center gap-4 rounded-xl bg-white p-5 shadow-md hover:shadow-xl transition"
       >
-        <div className="rounded-xl bg-green-100 p-3">
+        <div className="rounded-xl bg-gradient-to-r from-green-300 via-teal-400 to-blue-500 rounded-xl p-4 sm:p-5 md:p-6 p-3">
           <Icon className="h-7 w-7 text-green-600" />
         </div>
 

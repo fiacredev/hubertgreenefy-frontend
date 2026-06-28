@@ -23,7 +23,7 @@ function About() {
   </div>
 
   {/* Overlay */}
-  <div className="absolute inset-0 bg-blue-800/70" />
+  <div className="absolute inset-0 bg-blue-500/70" />
 
   {/* Hero Banner Content */}
   <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-white">
@@ -86,14 +86,14 @@ function About() {
             <div className="text-center">
               <div className="mx-auto mb-6 h-64 w-64 overflow-hidden rounded-full border-8 border-green-100 shadow-xl">
                 <img
-                  src="ish.jpg"
+                  src="quality.png"
                   alt="Company Founder"
                   className="h-full w-full object-cover"
                 />
               </div>
 
               <h4 className="text-2xl font-bold text-gray-900">
-                Hubert Fiacre
+                Isihi Hubert
               </h4>
 
               <p className="mb-4 font-medium text-green-600">
