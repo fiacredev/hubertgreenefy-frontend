@@ -23,7 +23,7 @@ function About() {
   </div>
 
   {/* Overlay */}
-  <div className="absolute inset-0 bg-blue-500/70" />
+  <div className="absolute inset-0 bg-blue-900/70" />
 
   {/* Hero Banner Content */}
   <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-white">
